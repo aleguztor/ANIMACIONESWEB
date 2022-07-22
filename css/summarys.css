@@ -1,0 +1,68 @@
+details{
+    margin-top: 20px;
+   
+    user-select: none; 
+    
+    background-color: rgb(46, 46, 46);
+    
+
+    margin: 20px;
+    transition: 0.3s;
+    
+}
+
+summary{
+    
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    list-style: none;
+    background-color: white;
+    transition: 0.3s;
+}
+summary:hover{
+    background-color: rgb(148, 216, 216);
+    transition: 0.3s;
+    color: aliceblue;
+}
+summary::before{
+    content: 'ABRIR -';
+    
+    
+}
+details[open] summary::before{
+    content: 'CERRAR - ';
+    
+}
+details[open] summary{
+    background-color: rgb(148, 216, 216);
+    color: white;
+}
+
+.flex-botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    
+}
+.flex-botones button{
+    transition: 0.3s;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    cursor: pointer;
+    border-style: none;
+}
+.flex-botones button:hover{
+    box-shadow: 0 0 20px #a945c7;
+   
+    background-color: #a945c7;
+    border-style: none;
+    color: aliceblue;
+}

@@ -35,7 +35,7 @@ header{
     
 }
 h1.ani{
-    
+    user-select: none; 
     font-family: 'Sacramento', cursive;
     color: bisque;
     font-size: 45px;
@@ -134,7 +134,7 @@ h1.ani{
 h1.ini2{
     margin-bottom: 0;
     font-size: 90px;
-    
+    user-select: none; 
     font-family: 'Sacramento', cursive;
     animation-iteration-count: infinite;
     animation-name: colores;
