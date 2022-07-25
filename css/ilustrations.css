@@ -1,0 +1,219 @@
+
+
+/* ILUSTRACION 1 "PLAY"*/
+.play{
+    background-color: rgb(22, 22, 22);
+    margin: 10px;
+    
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;
+}
+.ilustration1{
+    display: block;
+    margin-left: -90px;
+    margin-right: 20px;
+    width: 507px;
+    height: 287px;
+   
+}
+
+#evento-click{
+   display: none;
+}
+label{
+  
+    
+    color: white;
+    
+}
+
+#flecha-1{
+    transform: translate(75px);
+ 
+}
+#flecha-3{
+    transform: translate(-65px);
+
+}
+#evento-click:checked ~ .ilustration1 #flecha-3 {
+    animation-name: animacion1;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+
+}
+@keyframes animacion1 {
+    from{
+        
+    }
+    to{
+        
+        transform: translate(0px);
+    }
+}
+#evento-click:checked ~ .ilustration1 #flecha-2 {
+    animation-name: animacion2;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    
+
+}
+@keyframes animacion2 {
+    from{
+        
+    }
+    to{
+        
+        transform: translate(30px);
+    }
+}
+
+/*ILUSTRACION 2 "BASKET"*/
+#evento-click2{
+    display: none;
+}
+.ilustrationdos{
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+#evento-click2:checked ~ .ilustrationdos #plants {
+    animation-name: animacion3;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+
+}
+@keyframes animacion3 {
+    0%{
+        
+    }
+    20%{
+        transform: rotate(0.2deg);
+    }
+    
+    40%{
+        transform: rotate(-0.2deg);
+    
+    }
+    60%{
+        transform: rotate(0.1deg);
+    }
+    80%{
+        transform: rotate(0.3deg);
+    }
+    to{
+        
+        transform: rotate(0deg);
+    }
+}
+
+#evento-click2:checked ~ .ilustrationdos #cuerpo-completo {
+    position: relative;
+    z-index: 1;
+    animation-timing-function:cubic-bezier(1, 1, 0.8, 0.8);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: animacion5;
+    
+
+}
+@keyframes animacion5 {
+    0%{
+        
+    }
+    50%{
+        transform: translate(-280px, 90px);
+    }
+    60%{
+        transform: translate(-280px, 100px) rotateZ(0.7deg);
+    }
+    100%{
+        
+        transform: translate(-280px, 100px) rotateZ(-0.7deg) ;
+    }
+}
+
+#evento-click2:checked ~ .ilustrationdos #cabeza {
+    
+    z-index: 0;
+    animation-name: animacion7;
+    animation-timing-function:cubic-bezier(1, 1, 0.8, 0.8 );
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+    
+
+}
+@keyframes animacion7 {
+    0%{
+        
+    }
+    
+    100%{
+        
+       transform: rotate(1deg);
+    }
+}
+#evento-click2:checked ~ .ilustrationdos #ball {
+    
+    animation-name: animacion6;
+    animation-timing-function:cubic-bezier(1, 1, 0.8, 0.8 );
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+    
+
+}
+@keyframes animacion6 {
+    0%{
+        
+    }
+    50%{
+        transform: translate(-280px, 100px);
+    }
+    55%{
+        transform: translate(-320px, 100px);
+    }
+    66%{
+        
+        transform: translate(-320px, 510px);
+      
+    }
+    75%{
+        transform: translate(-320px, 510px);
+    }
+    80%{
+         transform:translate(-320px, 510px) scaleY(0.7);
+    }
+   
+    100%{
+        
+        transform: translate(-230px, 320px);
+    }
+}
+#evento-click2:checked ~ .ilustrationdos #sombra {
+    
+    animation-name: animacion8;
+    animation-timing-function:cubic-bezier(1, 1, 0.8, 0.8 );
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+    
+
+}
+@keyframes animacion8 {
+    50%{
+        transform: translateX(-230px);
+    }
+    100%{
+        transform: translateX(-200px);
+    }
+    
+}
+
